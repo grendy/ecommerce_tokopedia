@@ -65,6 +65,5 @@ driver.find_element_by_id('s_imgBtnSearch').click()
 ##Running engine
 To running engine use crontab for automatic scheduling
 ```bash
-2 * * * * cd /root/crawler/ecommerce/tokopedia && python2.7 tokopedia.py > /dev/null 2>&1
-1 * * * * kill -9 $(ps -ef|grep "tokopedia.py"|grep -v "grep"|awk '{print $2}')
+python2.7 tokopedia.py
 ```
